@@ -15,8 +15,8 @@ const products = [
 
 const ShopPage = () => {
   return (
-    <div className="min-h-screen bg-[#4E342E] p-8 text-white"> {/* Deep brown */}
-      <h1 className="text-3xl font-bold mb-6 text-center text-white drop-shadow-lg">
+    <div className="min-h-screen bg-[#4E342E] pt-24 px-6 pb-10 text-white"> {/* pt-24 to offset fixed navbar */}
+      <h1 className="text-3xl font-bold mb-6 text-center drop-shadow-lg">
         Shop Our Products
       </h1>
 
@@ -24,7 +24,7 @@ const ShopPage = () => {
         {products.map((product, index) => (
           <div
             key={index}
-            className="bg-[#6D4C41] rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105" // lighter brown
+            className="bg-[#6D4C41] rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
           >
             <div className="relative w-full h-60">
               <Image
@@ -36,8 +36,8 @@ const ShopPage = () => {
               />
             </div>
             <div className="p-4">
-              <h2 className="text-xl font-semibold text-white">{product.name}</h2>
-              <p className="mt-2 text-lg font-medium text-yellow-200">{product.price}</p> {/* Accent color */}
+              <h2 className="text-xl font-semibold">{product.name}</h2>
+              <p className="mt-2 text-lg font-medium text-yellow-200">{product.price}</p>
             </div>
           </div>
         ))}
