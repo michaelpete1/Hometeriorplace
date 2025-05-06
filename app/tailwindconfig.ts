@@ -4,6 +4,9 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        woodBrown: "#5d4037", // Custom brown color
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0", transform: "translateY(-20px)" },
