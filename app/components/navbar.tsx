@@ -58,9 +58,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Links */}
-      {isOpen && (
-        <div className="md:hidden bg-[#1f1f1f] px-4 pb-4 space-y-2 text-center">
+      {/* Mobile Links with animation */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-[300px] opacity-100 scale-100" : "max-h-0 opacity-0 scale-95"
+        }`}
+      >
+        <div className="bg-[#1f1f1f] px-4 pb-4 space-y-2 text-center">
           <Link href="/Contact" className="block text-white py-2 hover:text-gray-300">
             Contact
           </Link>
@@ -74,7 +78,7 @@ const Navbar = () => {
             Bowl
           </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
