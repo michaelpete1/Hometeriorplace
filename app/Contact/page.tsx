@@ -70,7 +70,7 @@ export default function ContactPage() {
                 <FaEnvelope />
               </a>
               <a
-                href="www.linkedin.com/in/chidiebere-onyekwere-3743b222b"
+                href="https://linkedin.com/in/chidiebere-onyekwere-3743b222b"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
